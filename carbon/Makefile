@@ -10,6 +10,5 @@ opt: carbon
 	tar xzf carbon/dist/carbon-$(VERSION).linux-$(shell uname -m).tar.gz
 
 package: opt
-	fpm -s dir -t deb -n $(NAME) -v $(VERSION) \
-	-p python-$(NAME)-$(VERSION)_all.deb -d "python" \
-	opt	
+	fpm -s dir -t deb -n python-$(NAME) -v $(VERSION)-heroku -a all \
+	 -d "python (>> 0)" opt
