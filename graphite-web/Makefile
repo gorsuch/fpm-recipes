@@ -11,5 +11,5 @@ opt: graphite-web
 
 package: opt
 	fpm -s dir -t deb -n $(NAME) -v $(VERSION) \
-	-p python-$(NAME)-$(VERSION)_all.deb -d "python" \
+	-p python-$(NAME)-$(VERSION)_all.deb -d "python-django (>> 0), python-cairo (>> 0)" \
 	opt	
