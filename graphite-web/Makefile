@@ -10,5 +10,5 @@ opt: graphite-web
 	tar xzf graphite-web/dist/graphite-web-$(VERSION).linux-$(shell uname -m).tar.gz
 
 package: opt
-	fpm -s dir -t deb -n python-$(NAME) -v $(VERSION)-heroku -a all \
+	fpm -s dir -t deb -n python-$(NAME) -v $(VERSION)-heroku-1 -a all \
 	-d "python-django (>> 0), python-cairo (>> 0), python-carbon (>> 0), python-whisper (>> 0)" opt

@@ -10,5 +10,5 @@ usr: whisper
 	tar xzf whisper/dist/whisper-$(VERSION).linux-$(shell uname -m).tar.gz
 
 package: usr
-	fpm -s dir -t deb -n python-$(NAME) -v $(VERSION)-heroku -a all -d "python (>> 0)" usr
+	fpm -s dir -t deb -n python-$(NAME) -v $(VERSION)-heroku-1 -a all -d "python (>> 0)" usr
 	
