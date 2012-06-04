@@ -1,5 +1,5 @@
 NAME=carbon
-VERSION=0.9.8
+VERSION=0.9.10
 
 carbon:
 	easy_install --editable --build-directory . "$(NAME)==$(VERSION)"
