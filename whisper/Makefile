@@ -1,5 +1,5 @@
 NAME=whisper
-VERSION=0.9.8
+VERSION=0.9.10
 
 whisper:
 	easy_install --editable --build-directory . "$(NAME)==$(VERSION)"
